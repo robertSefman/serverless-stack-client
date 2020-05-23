@@ -29,7 +29,7 @@ const prod = {
   cognito: {
     REGION: "us-east-1",
     USER_POOL_ID: "us-east-1_S9xnA7qSV",
-    APP_CLIENT_ID: "5767bopdkp7g83e54q4d5sr5nrk",
+    APP_CLIENT_ID: "767bopdkp7g83e54q4d5sr5nrk",
     IDENTITY_POOL_ID: "us-east-1:88915cf2-560f-4d17-b903-ea239fa5a318",
   },
 }
