@@ -1,3 +1,22 @@
+const local = {
+  STRIPE_KEY: "pk_test_kt0azGnyVtnNXZTzC9LCzQg400mzoSON0P",
+  s3: {
+    REGION: "us-east-1",
+    BUCKET: "notes-app-2-api-dev-attachmentsbucket-dkopn53uyrpn",
+  },
+  apiGateway: {
+    REGION: "us-east-1",
+    URL: "https://ryovize8s7.execute-api.us-east-1.amazonaws.com/prod",
+  },
+  cognito: {
+    REGION: "us-east-1",
+    USER_POOL_ID: "us-east-1_E1rBhWRZD",
+    APP_CLIENT_ID: "57gm05n423rmp7mjvsfcb3kgid",
+
+    IDENTITY_POOL_ID: "us-east-1:3676dadb-4244-4fc4-b4b2-22cdeebba165",
+  },
+}
+
 const dev = {
   STRIPE_KEY: "pk_test_kt0azGnyVtnNXZTzC9LCzQg400mzoSON0P",
   s3: {
@@ -35,7 +54,8 @@ const prod = {
 }
 
 // Default to dev if not set
-const config = process.env.REACT_APP_STAGE === "prod" ? prod : dev
+// const config = process.env.REACT_APP_STAGE === "prod" ? prod : dev
+const config = prod
 
 export default {
   // Add common config values here
